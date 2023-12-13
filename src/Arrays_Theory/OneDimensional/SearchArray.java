@@ -6,21 +6,17 @@ import java.util.*;
 public class SearchArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr1 = new int[n];
+        int size = sc.nextInt();
+        Array A2;
+        A2 = new Array(size);
 
-        //Creating an array
-        for(int i=0;i<arr1.length;i++){
-            arr1[i]=sc.nextInt();
-        }
-        System.out.println(Arrays.toString(arr1));
 
         //Searching an element in an Array
         //Linear search
         System.out.print("Enter the element to be found = ");
         int ele4 = sc.nextInt();
-        for(int i=0;i<arr1.length;i++){
-            if(arr1[i]==ele4){
+        for(int i=0;i<size;i++){
+            if(A2.getArr()[i]==ele4){
                 System.out.println(ele4+" is present at position "+(i+1));
             }
         }
@@ -29,13 +25,13 @@ public class SearchArray {
         System.out.print("Enter the element to be found = ");
         int ele5 = sc.nextInt();
         int low = 0;
-        int high = arr1.length-1;
+        int high = size-1;
         int mid = (low+high)/2;
         while(low<=high){
-            if(arr1[mid]<ele5){
+            if(A2.getArr()[mid]<ele5){
                 low = mid+1;
             }
-            else if(arr1[mid]==ele5){
+            else if(A2.getArr()[mid]==ele5){
                 System.out.println(ele5+" is present at position "+(mid+1));
                 break;
             }
@@ -43,7 +39,6 @@ public class SearchArray {
                 high = mid-1;
             }
             mid = (low+high)/2;
-        }
+       }
     }
-
 }

@@ -6,18 +6,12 @@ import java.util.*;
 public class Basic_Operations {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];        //Initializing an array
-
-        //Creating an array
-        for(int i=0;i<arr.length;i++){
-            arr[i]=sc.nextInt();
-        }
-        System.out.println(Arrays.toString(arr));
+        int size = sc.nextInt();                                //user inputs the size of the array
+        Array A1 = new Array(size);                             //Array object is created using the Class Array where the array is created
 
         //Traversing through Array
-        for(int i=0; i<arr.length; i++){
-            System.out.println("Arr["+i+"] = "+arr[i]);
+        for(int i=0; i<size; i++){
+            System.out.println("Arr["+i+"] = "+A1.getArr()[i]);
         }
 
         //Inserting an element in an Array
@@ -26,20 +20,20 @@ public class Basic_Operations {
         System.out.print("Enter the position of insertion = ");
         int pos1 = sc.nextInt();
 
-        for(int i=arr.length-1; i>=pos1; i--){
-            arr[i] = arr[i-1];
+        for(int i=size-1; i>=pos1; i--){
+            A1.getArr()[i] = A1.getArr()[i-1];                  //Right shift happens till the position where the element is to be inserted
         }
-        arr[pos1-1]=ele1;
-        System.out.println(Arrays.toString(arr));
+        A1.getArr()[pos1-1]=ele1;                               //Element is inserted
+        System.out.println(Arrays.toString(A1.getArr()));
 
         //Deleting an element in an Array
         System.out.print("Enter the position of deletion = ");
         int pos2 = sc.nextInt();
 
-        for (int i=pos2;i<arr.length;i++){
-            arr[i-1] = arr[i];
+        for (int i=pos2;i<size;i++){
+            A1.getArr()[i-1] = A1.getArr()[i];                  //Left shift happens till the position where the element is to be deleted
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(A1.getArr()));
 
         //Update an element in an Array
         System.out.print("Enter the position of update = ");
@@ -47,7 +41,7 @@ public class Basic_Operations {
         System.out.print("Enter the element to be added = ");
         int ele3 = sc.nextInt();
 
-        arr[pos3-1] = ele3;
-        System.out.println(Arrays.toString(arr));
+        A1.getArr()[pos3-1] = ele3;                             //Element is overwritten at the specified position
+        System.out.println(Arrays.toString(A1.getArr()));
     }
 }
