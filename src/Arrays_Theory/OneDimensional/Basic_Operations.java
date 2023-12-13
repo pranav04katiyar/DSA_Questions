@@ -49,36 +49,5 @@ public class Basic_Operations {
 
         arr[pos3-1] = ele3;
         System.out.println(Arrays.toString(arr));
-
-        //Searching an element in an Array
-        //Linear search
-        System.out.print("Enter the element to be found = ");
-        int ele4 = sc.nextInt();
-        for(int i=0;i<arr.length;i++){
-            if(arr[i]==ele4){
-                System.out.println(ele4+" is present at position "+(i+1));
-            }
-        }
-
-        //Binary Search
-        System.out.print("Enter the element to be found = ");
-        int ele5 = sc.nextInt();
-        int s = 0;
-        int e = arr.length - 1;
-        while(s<=e){
-            int mid = (s+e)/2;
-            if(arr[mid] > ele5){
-                e = mid - 1;
-            }
-            else if(arr[mid] < ele5){
-                s = mid + 1;
-            }
-            else{
-                System.out.println(mid);
-            }
-        }
-        if(s>e){
-            System.out.println(ele5 + " not found");
-        }
     }
 }
