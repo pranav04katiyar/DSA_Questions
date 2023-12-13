@@ -1,8 +1,8 @@
-package OneDimensional;
+package Arrays_Theory.OneDimensional;
 
 import java.util.Arrays;
 import java.util.*;
-import java.io.*;
+
 public class Basic_Operations {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
