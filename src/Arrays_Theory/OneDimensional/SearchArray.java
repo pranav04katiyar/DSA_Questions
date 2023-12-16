@@ -7,8 +7,7 @@ public class SearchArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
-        Array A2;
-        A2 = new Array(size);
+        Array A2 = new Array(size);
 
 
         //Searching an element in an Array
