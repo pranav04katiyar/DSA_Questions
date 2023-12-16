@@ -6,7 +6,9 @@ A pair(i, j) in the array is a good pair if i != j and (A[i] + A[j] == B). Check
 import java.util.Scanner;
 public class Good_Pair {
     public int solve(int[] A, int B) {
-      /*  int ans=0;                                        //This is the brute force approach, Time complexity is O(n^2), Space complexity is O(1)
+      /*
+        //This is the brute force approach, Time complexity is O(n^2), Space complexity is O(1)
+        int ans=0;
         for(int i = 0; i<A.length; i++){                    //Iterating through the array from the start
             for(int j = A.length-1; j>i; j--){              //Iterating through the array from the end
                 if(A[i]+A[j]==B){                 //If the sum of the elements at the start and end pointer is equal to B, then the pair is found
@@ -17,22 +19,23 @@ public class Good_Pair {
         }
         return ans;                        //If the pair is found, then ans = 1, else ans = 0
   */
-          int ans = 0;                            //This is the optimized approach, Time complexity is O(n), Space complexity is O(1)
-          int i = 0;                              //This is Left pointer
-          int j = A.length-1;                     //This is Right pointer
-          while(i<j){
-                if(A[i]+A[j]==B){                 //If the sum of the elements at the left and right pointer is equal to B, then the pair is found
-                 ans = 1;
-                 break;
-                }
-                else if(A[i]+A[j]<B){             //If the sum of the elements at the left and right pointer is less than B, then the left pointer is incremented
-                 i++;
-                }
-                else{                             //If the sum of the elements at the left and right pointer is greater than B, then the right pointer is decremented
-                 j--;
-                }
-          }
-          return ans;                 //If the pair is found, then ans = 1, else ans = 0
+        //This is the optimized approach, Time complexity is O(n), Space complexity is O(1)
+        int ans = 0;
+        int i = 0;                              //This is Left pointer
+        int j = A.length-1;                     //This is Right pointer
+        while(i<j){
+            if(A[i]+A[j]==B){                 //If the sum of the elements at the left and right pointer is equal to B, then the pair is found
+                ans = 1;
+                break;
+            }
+            else if(A[i]+A[j]<B){             //If the sum of the elements at the left and right pointer is less than B, then the left pointer is incremented
+                i++;
+            }
+            else{                             //If the sum of the elements at the left and right pointer is greater than B, then the right pointer is decremented
+                j--;
+            }
+        }
+        return ans;                 //If the pair is found, then ans = 1, else ans = 0
     }
 
     public static void main(String[] args) {
