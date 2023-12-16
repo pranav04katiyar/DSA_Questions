@@ -1,5 +1,7 @@
 package Arrays_Questions;
 
+/*Given an integer array A of size N and an integer B, you have to print the same array after rotating it B times towards the right.*/
+
 import java.lang.*;
 import java.util.*;
 public class RotateArraybyNElements {
