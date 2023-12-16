@@ -1,7 +1,5 @@
 package Arrays_Questions;
 
-import java.util.Scanner;
-
 /*You're given a read-only array of N integers.
 Find out if any integer occurs more than N/3 times in the array in linear time and constant additional space.
 If so, return the integer. If not, return -1.
@@ -10,6 +8,8 @@ Note: Read-only array means that the input array should not be modified in the p
 
 /*This code aims to find the majority element(s) in an array.
 The majority element is defined as an element that appears more than ⌊n/3⌋ times in the array, where n is the size of the array.*/
+
+import java.util.Scanner;
 
 public class N_DividedBy_3_Repeat_number {
     public int repeatedNumber(int[] A) {
