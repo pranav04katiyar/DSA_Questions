@@ -14,7 +14,7 @@ public class SquareRoot_of_Integer {
         // the given constraint are 0 <= A <= 10^9 so we should initialize the vriable as long
         long ans = 0; // Initialize te ans variable to 0. Because input also b a 0
         long l = 1, r = A;
-        while(l <= r) {
+        while(l <= r) {     // Binary Search
             long m = (r+l)/2;
             if(m * m <= A) {
                 ans = m;
