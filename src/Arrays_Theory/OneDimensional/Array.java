@@ -1,5 +1,10 @@
 package Arrays_Theory.OneDimensional;
 
+/*
+This class is used to create an array and perform basic operations like insertion, deletion and updation of elements in the array by calling from the main class.
+ */
+
+
 import java.util.*;
 public class Array {
 

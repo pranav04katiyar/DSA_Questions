@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Basic_Operations {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);                    //Scanner object is created
         int size = sc.nextInt();                                //user inputs the size of the array
         Array A1 = new Array(size);                             //Array object is created using the Class Array where the array is created
 
@@ -21,9 +21,9 @@ public class Basic_Operations {
         int pos1 = sc.nextInt();
 
         for(int i=size-1; i>=pos1; i--){
-            A1.getArr()[i] = A1.getArr()[i-1];                  //Right shift happens till the position where the element is to be inserted
+            A1.getArr()[i] = A1.getArr()[i-1];     //Right shift happens till the position where the element is to be inserted
         }
-        A1.getArr()[pos1-1]=ele1;                               //Element is inserted
+        A1.getArr()[pos1-1]=ele1;     //Element is inserted
         System.out.println(Arrays.toString(A1.getArr()));
 
         //Deleting an element in an Array
