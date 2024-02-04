@@ -3,31 +3,31 @@ package Arrays_Theory.OneDimensional;
 import java.util.*;
 public class Array {
 
-    Scanner sc = new Scanner(System.in);
-    private int n;
-    private int[] arr;
+    Scanner sc = new Scanner(System.in);        //Scanner object is created
+    private int n;                        //Variable to store the size of the array
+    private int[] arr;              //Array to store the elements
 
     public int[] getArr(){
         return arr;
-    }
+    }           //Getter method to return the array
     public int getN(){
         return n;
-    }
+    }           //Getter method to return the size of the array
 
     public void setArr(int[] arr){
         this.arr = arr;
-    }
+    }       //Setter method to set the array
 
     public void setN(int n){
         this.n = n;
-    }
+    }       //Setter method to set the size of the array
 
-    public Array(int n){
-        this.n = n;
-        arr = new int[n];
-        for(int i=0;i<n;i++){
+    public Array(int n){            //Constructor to initialize the size of the array
+        this.n = n;                         //Size of the array is set
+        arr = new int[n];                   //Array is created
+        for(int i=0;i<n;i++){               //Input the elements of the array
             arr[i]=sc.nextInt();
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr));       //Print the array
     }
 }
