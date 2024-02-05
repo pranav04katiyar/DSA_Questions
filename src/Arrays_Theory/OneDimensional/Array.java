@@ -2,6 +2,7 @@ package Arrays_Theory.OneDimensional;
 
 /*
 This class is used to create an array and perform basic operations like insertion, deletion and updation of elements in the array by calling from the main class.
+The purpose is to get used to using constructors and getter and setter methods.
  */
 
 
