@@ -12,7 +12,7 @@ public class Greatest_Common_Divisor {
             return(B);    // because 0 is divisible by every number
         }
         else{           // else return gcd(B%A,A)
-            return(gcd(B%A,A));
+            return(gcd(B%A,A));     //Eg: A=5, B=10, then 10%5=0, so 5 is the gcd
         }
     }
 
