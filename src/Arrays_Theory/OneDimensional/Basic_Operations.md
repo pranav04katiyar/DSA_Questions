@@ -3,8 +3,8 @@
 >1. User defined -
 ```Java
 Scanner sc = new Scanner(System.in);        //Scanner object is created
-        int size = sc.nextInt();           //user inputs the size of the array
-        Array A1 = new Array(size);        //Array object is created using the Class Array where the array is created
+int size = sc.nextInt();           //user inputs the size of the array
+Array A1 = new Array(size);        //Array object is created using the Class Array where the array is created
 ```
 >2. Predefined -
 ```Java
