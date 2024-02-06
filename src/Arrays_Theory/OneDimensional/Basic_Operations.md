@@ -18,7 +18,7 @@ for(int i=0; i<size; i++){
     System.out.print(A1.getArr()[i]+" ");     //Elements of the array are printed
 }
 ```
-- > Here, A1 is the object of the class Array and getArr() is the getter method of the class Array which returns the array
+- > Here, A1 is an object of a class Array and getArr() is a getter method of the class Array which returns the array
 
 >2. Predefined -
 ```Java
