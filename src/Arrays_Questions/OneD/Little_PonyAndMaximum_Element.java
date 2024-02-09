@@ -1,4 +1,4 @@
-package Arrays_Questions;
+package Arrays_Questions.OneD;
 
 import java.util.Scanner;
 

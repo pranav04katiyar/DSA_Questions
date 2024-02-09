@@ -1,4 +1,4 @@
-package Arrays_Questions;
+package Arrays_Questions.OneD;
 
 /*You are given a n x n 2D matrix A representing an image. Rotate the image by 90 degrees (clockwise).
 You need to do this in place.

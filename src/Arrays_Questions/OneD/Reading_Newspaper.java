@@ -1,4 +1,4 @@
-package Arrays_Questions;
+package Arrays_Questions.OneD;
 
 /* You have a newspaper which has A lines to read.
 You decided to start reading the 1st line from Monday. You are given a schedule, B, where B[i] = number of lines you can read on that day.

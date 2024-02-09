@@ -1,4 +1,4 @@
-package Arrays_Questions;
+package Arrays_Questions.OneD;
 
 /* Little pony is going to buy some mobile phones for his friends.
 As there are many models available in the market at different prices, he is confused and wants to know the maximum distinct models of a mobile phone he can buy for his friends,

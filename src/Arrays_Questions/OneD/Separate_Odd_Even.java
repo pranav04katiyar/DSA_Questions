@@ -1,4 +1,4 @@
-package Arrays_Questions;
+package Arrays_Questions.OneD;
 
 /*You are given an integer T denoting the number of test cases. For each test case, you are given an integer array A.
 You have to print the odd and even elements of array A in 2 separate lines.

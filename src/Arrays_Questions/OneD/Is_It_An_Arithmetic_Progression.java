@@ -1,4 +1,4 @@
-package Arrays_Questions;
+package Arrays_Questions.OneD;
 
 /* Given an integer array A of size N. Return 1 if the array can be arranged to form an arithmetic progression, otherwise return 0.
 A sequence of numbers is called an arithmetic progression if the difference between any two consecutive elements is the same.*/

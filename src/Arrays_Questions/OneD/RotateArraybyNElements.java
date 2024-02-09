@@ -1,4 +1,4 @@
-package Arrays_Questions;
+package Arrays_Questions.OneD;
 
 /*Given an integer array A of size N and an integer B, you have to print the same array after rotating it B times towards the right.*/
 
