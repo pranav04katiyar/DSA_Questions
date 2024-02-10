@@ -4,7 +4,7 @@
 It is similar to the array, but it can change its size. It is a part of Java's collection framework.
 It uses a dynamic array for storing the elements. It is a generic class.
 
-> **How ArrayList works:**
+**How ArrayList works:**
 > - It uses a dynamic array for storing the elements.
 > - When an array is full, it creates a new array with a larger size at a different memory location and copies the elements of the old array to the new array with a larger capacity.
 > - Since the new array is created at a different memory location, the reference of the old array is changed to the new array.
@@ -14,12 +14,12 @@ It uses a dynamic array for storing the elements. It is a generic class.
 > - The default capacity of the array is 10.
 
 
-> **Advantages:**
+**Advantages:**
 > - It is better than the array because it can grow and shrink dynamically.
 > - It is easy to use because it provides many inbuilt methods.
 > - It is a better choice than the array because it can store the elements of different types.
 
-> **Disadvantages:**
+**Disadvantages:**
 > - It is slower than the array because it is a part of the collection framework.
 > - It is not type-safe. It can store any type of elements.
 > - It is not synchronized. It is not thread-safe and not suitable for multi-threaded environments.
