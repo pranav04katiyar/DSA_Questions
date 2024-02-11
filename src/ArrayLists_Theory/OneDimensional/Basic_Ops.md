@@ -53,6 +53,7 @@ ArrayList list = new ArrayList();  // ArrayList of Object type.
 > - size(): It is used to get the number of elements in the ArrayList.
 > - contains(): It is used to check whether an element is present in the ArrayList or not.
 > - isEmpty(): It is used to check whether the ArrayList is empty or not.
+> - ensureCapacity(): It is used to increase the capacity of the ArrayList.
 
 Example:
 ```java
@@ -112,14 +113,10 @@ true                    // Checking whether the ArrayList is empty or not.
 ```
 
 
-> - clear(): It is used to remove all the elements from the ArrayList.
-> - size(): It is used to get the number of elements in the ArrayList.
-> - contains(): It is used to check whether an element is present in the ArrayList or not.
-> - isEmpty(): It is used to check whether the ArrayList is empty or not.
+**Other Methods:**
 > - clone(): It is used to create a shallow copy of the ArrayList.
 > - toArray(): It is used to convert the ArrayList to an array.
 > - trimToSize(): It is used to trim the capacity of the ArrayList to the number of elements it contains.
-> - ensureCapacity(): It is used to increase the capacity of the ArrayList.
 > - indexOf(): It is used to get the index of the first occurrence of an element in the ArrayList.
 > - lastIndexOf(): It is used to get the index of the last occurrence of an element in the ArrayList.
 > - subList(): It is used to get a portion of the ArrayList.
