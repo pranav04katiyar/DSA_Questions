@@ -111,8 +111,6 @@ null                            // Trimming the capacity of the ArrayList to the
 true                    // Removing all the elements of the ArrayList from the ArrayList.
 true                    // Checking whether the ArrayList is empty or not.
 ```
-
-
 **Other Methods:**
 > - clone(): It is used to create a shallow copy of the ArrayList.
 > - toArray(): It is used to convert the ArrayList to an array.
