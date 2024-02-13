@@ -120,4 +120,14 @@ true                    // Checking whether the ArrayList is empty or not.
 > - subList(): It is used to get a portion of the ArrayList.
 > - sort(): It is used to sort the elements of the ArrayList.
 
+**Wrapper Classes:**
+> - The wrapper classes are used to convert primitive data types into objects so that they can be used in the collection framework.
+> - The eight primitive data types are byte, short, int, long, float, double, char, and boolean.
+> - The wrapper classes are Byte, Short, Integer, Long, Float, Double, Character, and Boolean.
+> - The wrapper classes are found in the java.lang package.
+> - Wrapper classes have many additional methods that are not found in the primitive data types, giving them more functionality.
 
+**Autoboxing and Unboxing:**
+> - Autoboxing is the process of converting a primitive data type into an object of the corresponding wrapper class.
+> - Unboxing is the process of converting an object of the wrapper class into a primitive data type.
+> - Autoboxing and unboxing are automatically performed by the compiler.
