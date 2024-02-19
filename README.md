@@ -12,50 +12,53 @@ This repo contains everything needed to learn and master DSA(Both theory and que
 
 >So I'll be including all my learnings to give a very solid foundation which is easy to understand and retain. 
 
-*Content*
-
+Content
+-
 1. Absolute Basics to start coding in Java
+   1. Basic Syntax
+   2. Data Types, Variables and Operators
+   3. Conditional Statements
+   4. Loops
+   5. Typecasting
+   6. Time Complexity
+   7. Space Complexity
 2. Maths topics required for DSA
 3. Concepts and Techniques required to solve DSA problems
    1. Bruteforce
-   2. Sliding Window
-   3. Divide and Conquer
-   4. Recursion
-   5. Backtracking
-   6. Greedy
-   7. Memoization (Top-Down DP)
-   8. Tabulation (Bottom-Up DP)
-   9. Bit Manipulation
-   10. Two Pointer Technique
-   11. Prefix Sum
-   12. Suffix Sum
+   2. Bit Manipulation
+   3. Recursion
+   4. Backtracking
+   5. Memoization (Top-Down DP)
+   6. Tabulation (Bottom-Up DP)
+   7. Greedy
+   8. Divide and Conquer
 4. Data Structures
-   * Fundamental Data Structures
-     1. 1D Arrays and Arraylists
-        1. Basic Operations - To create, traverse, insert, delete, modify, search and sort an array.
-        2. Special Techniques
-           1. Prefix Sum and Suffix Sum
-           2. Carry Forward
-           3. Subarray Problems
-           4. Subsequence Problems
-           5. Sliding Window
-           6. Two Pointer Technique
-     2. Matrix (2D Arrays and Arraylists)
-     3. Strings
-     4. Linked List
-     5. Stacks and Queues
-        * Stacks
-        * Queues
-   * Advanced Data Structures
-     1. Trees
-        * Fundamental Trees
-          * Binary Trees
-          * Ternary Trees
-          * N-ary Trees
-        * Tries
-        * Heaps
-     2. Hashmaps
-     3. Graphs
+   1. Fundamental Data Structures
+      1. 1D Arrays and Arraylists
+         1. Basic Operations //To create, traverse, insert, delete, modify, search and sort an array.
+         2. Special Techniques
+            1. Prefix Sum and Suffix Sum
+            2. Carry Forward
+            3. Subarray Problems
+            4. Subsequence Problems
+            5. Sliding Window
+            6. Two Pointer Technique
+      2. Matrix (2D Arrays and Arraylists)
+      3. Strings
+      4. Linked List
+      5. Stacks and Queues
+         1. Stacks
+         2. Queues
+   2. Advanced Data Structures
+      1. Trees
+         1. Fundamental Trees
+            1. Binary Trees
+            2. Ternary Trees
+            3. N-ary Trees
+         2. Tries
+         3. Heaps
+      2. Hashmaps
+      3. Graphs
 5. Algorithms
    1. Searching
       1. Linear Search
