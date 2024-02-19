@@ -1,6 +1,10 @@
 # Data Structures and Algorithms - Java
 
-This repo contains everything needed to learn and master DSA(Both theory and questions) from scratch in a beginner-friendly structure.
+This repo contains everything needed to learn and master DSA (Both theory and questions) from scratch in a beginner-friendly structure.
+
+Each topic has theory as well as questions to practice, both in the same place.
+
+There will also be Topic wise Leetcode questions linked to practice.
 
 *Disclaimer*
 
