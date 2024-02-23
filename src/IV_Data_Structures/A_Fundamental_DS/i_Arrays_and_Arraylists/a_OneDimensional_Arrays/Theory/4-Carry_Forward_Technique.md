@@ -19,13 +19,12 @@ public class MaximumSumSubarray {
     }
 }
 ```
-Here, we use the carry forward technique to keep track of the maximum sum of subarrays ending at each index.
-
-1. We initialize the `maxSum` and `currentSum` variables with the first element of the array.
-2. Then, for each element in the array, we update the `currentSum` by taking the maximum of the current element and the sum of the current element and the previous `currentSum`.
-3. We also update the `maxSum` by taking the maximum of the current `maxSum` and the `currentSum`. 
-4. This way, we carry forward the information from the previous iteration to the current iteration.
-5. At the end, we get the maximum sum of a subarray in the array.
+>Here, we use the carry forward technique to keep track of the maximum sum of subarrays ending at each index.
+>1. We initialize the `maxSum` and `currentSum` variables with the first element of the array.
+>2. Then, for each element in the array, we update the `currentSum` by taking the maximum of the current element and the sum of the current element and the previous `currentSum`.
+>3. We also update the `maxSum` by taking the maximum of the current `maxSum` and the `currentSum`. 
+>4. This way, we carry forward the information from the previous iteration to the current iteration.
+>5. At the end, we get the maximum sum of a subarray in the array.
 
 - Time Complexity: O(n), because we only have to iterate through the array once to calculate the maximum sum of a subarray.
 - Space Complexity: O(1), because we only need a constant amount of space to store the `maxSum` and `currentSum` variables.
