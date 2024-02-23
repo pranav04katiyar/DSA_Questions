@@ -109,7 +109,7 @@ for(int i=0;i<size;i++){
     }
 }
 ```
- - Time Complexity: O(n^2) - Uses double for loop
+ - Time Complexity: O(n) - Uses single for loop iterating through the entire array
  - Space Complexity: O(1) - Uses only a temporary variable
 
 2. Binary Search -
