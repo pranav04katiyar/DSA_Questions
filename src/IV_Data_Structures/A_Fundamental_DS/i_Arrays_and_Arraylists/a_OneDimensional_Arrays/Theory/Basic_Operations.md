@@ -1,3 +1,15 @@
+*Definition:*
+-
+* Array is a collection of similar data items. It is a linear data structure, where the elements are stored in contiguous memory locations. 
+* The elements are accessed using their index. The index of the first element is 0 and the index of the last element is n-1, where n is the size of the array.
+* The size of the array is fixed and cannot be changed once it is created. The elements of the array can be of any data type, such as int, float, char, etc.
+
+*Use Case*
+-
+* Arrays are used to store data of the same type, in situations where the number of elements is known and fixed, like storing marks of students, storing the temperature of a city for a week, etc.
+
+**The basic operations that can be performed on an array are:**
+
 *To create an array:*
 -
 1. User defined -
