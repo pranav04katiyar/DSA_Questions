@@ -36,4 +36,3 @@ Here, we use the carry forward technique to keep track of the maximum sum of sub
 >- The carry forward technique is also more efficient in terms of time complexity, as it only requires a single pass through the array to calculate the maximum sum of a subarray, whereas the prefix and suffix sum algorithms require multiple passes to calculate the prefix and suffix sums.
 
 In conclusion, the carry forward technique is a powerful and efficient approach for solving problems involving subarrays, and it offers several advantages over other techniques such as prefix and suffix sum algorithms.
-```
