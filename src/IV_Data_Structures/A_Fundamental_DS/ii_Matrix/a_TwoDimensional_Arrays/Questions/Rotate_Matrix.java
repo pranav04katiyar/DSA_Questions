@@ -1,4 +1,4 @@
-package IV_Data_Structures.A_Fundamental_DS.i_Arrays_and_Arraylists.a_OneDimensional_Arrays.Questions;
+package IV_Data_Structures.A_Fundamental_DS.ii_Matrix.a_TwoDimensional_Arrays.Questions;
 
 /*You are given a n x n 2D matrix A representing an image. Rotate the image by 90 degrees (clockwise).
 You need to do this in place.
