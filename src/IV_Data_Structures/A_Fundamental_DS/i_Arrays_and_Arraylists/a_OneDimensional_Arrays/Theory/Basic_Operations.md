@@ -120,7 +120,7 @@ int ele4 = 5;     //Element to be searched
 int flag=0;
 
 //sorting the array
-for(int i=0; i<size-1; i++){
+/*for(int i=0; i<size-1; i++){
     for(int j=i+1; j<size; j++){
         if(A1.getArr()[i]>A1.getArr()[j]){
             int temp = A1.getArr()[i];
@@ -128,7 +128,7 @@ for(int i=0; i<size-1; i++){
             A1.getArr()[j] = temp;     //Elements are swapped
         }
     }
-}
+}*/
 
 while(low<=high){
     mid = (low+high)/2;
