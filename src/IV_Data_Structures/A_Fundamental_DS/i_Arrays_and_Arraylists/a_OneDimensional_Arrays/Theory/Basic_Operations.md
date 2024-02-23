@@ -168,21 +168,21 @@ System.out.println(Arrays.toString(A1.getArr()));
 > We will learn about the sorting algorithms in the sorting section of the algorithms. For now, just know there are multiple sorting algorithms like Selection Sort, Bubble Sort, Insertion Sort, Merge Sort, Quick Sort, etc.
 
 >1. Selection Sort -
-- Time Complexity: O(n^2) - Uses double for loop
-- Space Complexity: O(1) - Uses only a temporary variable
+>- Time Complexity: O(n^2) - Uses double for loop
+>- Space Complexity: O(1) - Uses only a temporary variable
 
 >2. Bubble Sort -
-- Time Complexity: O(n^2) - Uses double for loop
-- Space Complexity: O(1) - Uses only a temporary variable
+>- Time Complexity: O(n^2) - Uses double for loop
+>- Space Complexity: O(1) - Uses only a temporary variable
 
 >3. Insertion Sort -
-- Time Complexity: O(n^2) - Uses double for loop
-- Space Complexity: O(1) - Uses only a temporary variable
+>- Time Complexity: O(n^2) - Uses double for loop
+>- Space Complexity: O(1) - Uses only a temporary variable
 
 >4. Merge Sort -
-- Time Complexity: O(n log n) - Uses divide and conquer algorithm
-- Space Complexity: O(n) - Uses temporary arrays to store the elements
+>- Time Complexity: O(n log n) - Uses divide and conquer algorithm
+>- Space Complexity: O(n) - Uses temporary arrays to store the elements
 
 >5. Quick Sort -
-- Time Complexity: O(n log n) - Uses divide and conquer algorithm
-- Space Complexity: O(log n) - Uses recursive calls
+>- Time Complexity: O(n log n) - Uses divide and conquer algorithm
+>- Space Complexity: O(log n) - Uses recursive calls
