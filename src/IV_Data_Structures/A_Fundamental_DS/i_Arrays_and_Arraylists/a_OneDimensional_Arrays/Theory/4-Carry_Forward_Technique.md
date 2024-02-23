@@ -1,5 +1,11 @@
 In Carry Forward technique, we carry forward the information from the previous iteration to the current iteration.
 
+**Benefits of Carry Forward Technique over prefix and suffix sum algorithms:**
+>- The carry forward technique is more efficient in terms of space complexity as it requires only a constant amount of space, whereas the prefix and suffix sum algorithms require additional arrays to store the prefix and suffix sums.
+>- The carry forward technique is also more intuitive and easier to implement for problems involving subarrays, as it directly deals with the current element and the previous sum, rather than calculating and maintaining separate arrays for prefix and suffix sums.
+>- The carry forward technique is versatile and can be applied to a wide range of problems involving subarrays, making it a valuable tool in the programmer's toolkit.
+>- The carry forward technique is also more efficient in terms of time complexity, as it only requires a single pass through the array to calculate the maximum sum of a subarray, whereas the prefix and suffix sum algorithms require multiple passes to calculate the prefix and suffix sums.
+
 The code snippet below shows how to use the carry forward technique to solve the problem of finding the maximum sum of a subarray in an array.
 
 ```Java
@@ -28,11 +34,5 @@ Here, we use the carry forward technique to keep track of the maximum sum of sub
 
 - Time Complexity: O(n), because we only have to iterate through the array once to calculate the maximum sum of a subarray.
 - Space Complexity: O(1), because we only need a constant amount of space to store the `maxSum` and `currentSum` variables.
-
-**Benefits of Carry Forward Technique over prefix and suffix sum algorithms:**
->- The carry forward technique is more efficient in terms of space complexity as it requires only a constant amount of space, whereas the prefix and suffix sum algorithms require additional arrays to store the prefix and suffix sums.
->- The carry forward technique is also more intuitive and easier to implement for problems involving subarrays, as it directly deals with the current element and the previous sum, rather than calculating and maintaining separate arrays for prefix and suffix sums.
->- The carry forward technique is versatile and can be applied to a wide range of problems involving subarrays, making it a valuable tool in the programmer's toolkit.
->- The carry forward technique is also more efficient in terms of time complexity, as it only requires a single pass through the array to calculate the maximum sum of a subarray, whereas the prefix and suffix sum algorithms require multiple passes to calculate the prefix and suffix sums.
 
 In conclusion, the carry forward technique is a powerful and efficient approach for solving problems involving subarrays, and it offers several advantages over other techniques such as prefix and suffix sum algorithms.
