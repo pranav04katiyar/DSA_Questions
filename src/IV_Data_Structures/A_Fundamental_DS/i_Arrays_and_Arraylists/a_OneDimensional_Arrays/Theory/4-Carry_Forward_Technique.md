@@ -29,8 +29,6 @@ public class MaximumSumSubarray {
 - Time Complexity: O(n), because we only have to iterate through the array once to calculate the maximum sum of a subarray.
 - Space Complexity: O(1), because we only need a constant amount of space to store the `maxSum` and `currentSum` variables.
 
-By using the carry forward technique, we are able to solve the problem efficiently in O(n) time complexity and O(1) space complexity.
-
 >**Benefits of Carry Forward Technique over prefix and suffix sum algorithms:**
 >- The carry forward technique is more efficient in terms of space complexity as it requires only a constant amount of space, whereas the prefix and suffix sum algorithms require additional arrays to store the prefix and suffix sums.
 >- The carry forward technique is also more intuitive and easier to implement for problems involving subarrays, as it directly deals with the current element and the previous sum, rather than calculating and maintaining separate arrays for prefix and suffix sums.
