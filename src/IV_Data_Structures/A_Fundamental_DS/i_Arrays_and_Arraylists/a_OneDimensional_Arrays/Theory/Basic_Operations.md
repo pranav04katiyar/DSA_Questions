@@ -100,8 +100,8 @@ for(int i=0; i<size-1; i++){
 }
 System.out.println(Arrays.toString(A1.getArr()));
 ```
-Time Complexity: O(n^2) - Uses double for loop
-Space Complexity: O(1) - Uses only a temporary variable
+ - Time Complexity: O(n^2) - Uses double for loop
+ - Space Complexity: O(1) - Uses only a temporary variable
 
 2. Binary Search -
 ```Java
@@ -141,3 +141,145 @@ else{
     System.out.println("Element not found");
 }
 ```
+- Time Complexity: O(log n) - Uses binary search algorithm
+- Space Complexity: O(1) - Uses only a temporary variable
+- Here, the array is sorted using the selection sort algorithm before performing the binary search, as binary search requires the array to be sorted.
+
+*To sort an array:*
+-
+1. Library function -
+```Java
+Arrays.sort(A1.getArr());
+System.out.println(Arrays.toString(A1.getArr()));
+```
+- Time Complexity: O(n log n) - Uses quicksort algorithm, which is the default sorting algorithm in Java for primitive types and the mergesort algorithm for objects and arrays of objects.
+- Space Complexity: O(n) - Uses a temporary array to store the elements.
+
+2. Selection Sort -
+```Java
+for(int i=0; i<size-1; i++){
+    int min = i;
+    for(int j=i+1; j<size; j++){
+        if(A1.getArr()[j]<A1.getArr()[min]){
+            min = j;     //Minimum element is found
+        }
+    }
+    int temp = A1.getArr()[i];
+    A1.getArr()[i] = A1.getArr()[min];
+    A1.getArr()[min] = temp;     //Elements are swapped
+}
+System.out.println(Arrays.toString(A1.getArr()));
+```
+- Time Complexity: O(n^2) - Uses double for loop
+- Space Complexity: O(1) - Uses only a temporary variable
+
+3. Bubble Sort -
+```Java
+for(int i=0; i<size-1; i++){
+    for(int j=0; j<size-i-1; j++){
+        if(A1.getArr()[j]>A1.getArr()[j+1]){
+            int temp = A1.getArr()[j];
+            A1.getArr()[j] = A1.getArr()[j+1];
+            A1.getArr()[j+1] = temp;     //Elements are swapped
+        }
+    }
+}
+System.out.println(Arrays.toString(A1.getArr()));
+```
+- Time Complexity: O(n^2) - Uses double for loop
+- Space Complexity: O(1) - Uses only a temporary variable
+
+4. Insertion Sort -
+```Java
+for(int i=1; i<size; i++){
+    int key = A1.getArr()[i];
+    int j = i-1;
+    while(j>=0 && A1.getArr()[j]>key){
+        A1.getArr()[j+1] = A1.getArr()[j];     //Right shift happens
+        j--;
+    }
+    A1.getArr()[j+1] = key;     //Element is inserted
+}
+System.out.println(Arrays.toString(A1.getArr()));
+```
+- Time Complexity: O(n^2) - Uses double for loop
+- Space Complexity: O(1) - Uses only a temporary variable
+
+5. Merge Sort -
+```Java
+public void mergeSort(int[] arr, int l, int r){
+    if(l<r){
+        int m = (l+r)/2;
+        mergeSort(arr, l, m);
+        mergeSort(arr, m+1, r);
+        merge(arr, l, m, r);
+    }
+}
+
+public void merge(int[] arr, int l, int m, int r){
+    int n1 = m-l+1;
+    int n2 = r-m;
+    int[] L = new int[n1];
+    int[] R = new int[n2];
+    for(int i=0; i<n1; i++){
+        L[i] = arr[l+i];
+    }
+    for(int j=0; j<n2; j++){
+        R[j] = arr[m+1+j];
+    }
+    int i=0, j=0, k=l;
+    while(i<n1 && j<n2){
+        if(L[i]<=R[j]){
+            arr[k] = L[i];
+            i++;
+        }
+        else{
+            arr[k] = R[j];
+            j++;
+        }
+        k++;
+    }
+    while(i<n1){
+        arr[k] = L[i];
+        i++;
+        k++;
+    }
+    while(j<n2){
+        arr[k] = R[j];
+        j++;
+        k++;
+    }
+}
+```
+- Time Complexity: O(n log n) - Uses divide and conquer algorithm
+- Space Complexity: O(n) - Uses temporary arrays to store the elements
+
+6. Quick Sort -
+```Java
+public void quickSort(int[] arr, int low, int high){
+    if(low<high){
+        int pi = partition(arr, low, high);
+        quickSort(arr, low, pi-1);
+        quickSort(arr, pi+1, high);
+    }
+}
+
+public int partition(int[] arr, int low, int high){
+    int pivot = arr[high];
+    int i = low-1;
+    for(int j=low; j<high; j++){
+        if(arr[j]<pivot){
+            i++;
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;     //Elements are swapped
+        }
+    }
+    int temp = arr[i+1];
+    arr[i+1] = arr[high];
+    arr[high] = temp;     //Elements are swapped
+    return i+1;
+}
+```
+- Time Complexity: O(n log n) - Uses divide and conquer algorithm
+- Space Complexity: O(log n) - Uses recursive calls
