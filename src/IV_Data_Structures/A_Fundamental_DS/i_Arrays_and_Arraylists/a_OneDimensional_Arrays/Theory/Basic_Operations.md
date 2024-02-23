@@ -113,6 +113,7 @@ for(int i=0;i<size;i++){
  - Space Complexity: O(1) - Uses only a temporary variable
 
 2. Binary Search -
+- The array must be sorted before performing binary search, as binary search requires the array to be sorted.
 ```Java
 int low=0, high=size-1, mid;
 int ele4 = 5;     //Element to be searched
