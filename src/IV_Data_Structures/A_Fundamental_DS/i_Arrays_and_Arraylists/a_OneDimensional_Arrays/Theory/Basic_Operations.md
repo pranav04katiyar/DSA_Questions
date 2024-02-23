@@ -101,16 +101,13 @@ A2[0] = 20; //Element at 0th position is modified to 20
 -
 1. Linear Search -
 ```Java
-for(int i=0; i<size-1; i++){
-    for(int j=i+1; j<size; j++){
-        if(A1.getArr()[i]>A1.getArr()[j]){
-            int temp = A1.getArr()[i];
-            A1.getArr()[i] = A1.getArr()[j];
-            A1.getArr()[j] = temp;     //Elements are swapped
-        }
+System.out.print("Enter the element to be found = ");
+int ele4 = sc.nextInt();
+for(int i=0;i<size;i++){
+    if(A2.getArr()[i]==ele4){           //Checks if the element is present
+        System.out.println(ele4+" is present at position "+(i+1));      //Position of the element is printed
     }
 }
-System.out.println(Arrays.toString(A1.getArr()));
 ```
  - Time Complexity: O(n^2) - Uses double for loop
  - Space Complexity: O(1) - Uses only a temporary variable
