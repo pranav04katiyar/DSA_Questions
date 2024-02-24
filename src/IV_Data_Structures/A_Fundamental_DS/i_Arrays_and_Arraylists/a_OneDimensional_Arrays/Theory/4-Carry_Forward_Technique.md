@@ -36,3 +36,7 @@ Here, we use the carry forward technique to keep track of the maximum sum of sub
 - Space Complexity: O(1), because we only need a constant amount of space to store the `maxSum` and `currentSum` variables.
 
 In conclusion, the carry forward technique is a powerful and efficient approach for solving problems involving subarrays, and it offers several advantages over other techniques such as prefix and suffix sum algorithms.
+
+*some Examples to understand the concept further*:
+1. [Good Pair 1](https://github.com/pranav04katiyar/DSA_Questions/blob/1858a48467fe0d38b47a2fdccf0913aa0e6954ae/src/IV_Data_Structures/A_Fundamental_DS/i_Arrays_and_Arraylists/a_OneDimensional_Arrays/Theory/CF_GoodPair.java)
+2. 
