@@ -8,7 +8,43 @@ Given a character array s[N], we need to find the number of good pairs of indice
 All characters are lowercase English alphabets.
  */
 public class CF_GoodPair {
-//Approach 1
+
+//Approach 1: Bruteforce approach - TC: O(n^2) SC: O(1)
+/*   public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char[] s = sc.next().toCharArray();             //Allows users to input char arrays
+        int count = 0;
+        for(int i=0; i<s.length; i++){
+            for(int j=i+1; j<s.length; j++){            //Nested loop to check for all possible pairs
+                if(s[i]=='a' && s[j]=='g'){             //if a pair is found, increase the count
+                    count++;
+                }
+            }
+        }
+        if(count!=0) System.out.println(count);            //print the total no. of good pairs
+        else System.out.println("No good pairs found");
+     }
+*/
+
+//Approach 2: Optimized approach - TC: O(n^2) SC: O(1)
+/*   public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char[] s = sc.next().toCharArray();             //Allows users to input char arrays
+        int count = 0;
+        for(int i=0; i<s.length; i++){
+            if(s[i]=='a'){
+            for(int j=i+1; j<s.length; j++){            //Nested loop to check for all possible pairs
+                if(s[j]=='g'){             //if a pair is found, increase the count
+                    count++;
+                }
+            }
+        }
+        if(count!=0) System.out.println(count);            //print the total no. of good pairs
+        else System.out.println("No good pairs found");
+     }
+*/
+
+//Best approach using Carry Forward Technique - TC: O(n) SC: O(1)
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         char[] s = sc.next().toCharArray();             //Allows users to input char arrays
