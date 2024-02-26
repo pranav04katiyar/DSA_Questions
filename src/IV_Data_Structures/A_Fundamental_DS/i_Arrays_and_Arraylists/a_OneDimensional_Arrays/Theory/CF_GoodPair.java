@@ -15,7 +15,7 @@ public class CF_GoodPair {
         char[] s = sc.next().toCharArray();             //Allows users to input char arrays
         int count = 0;
         for(int i=0; i<s.length; i++){
-            for(int j=i+1; j<s.length; j++){            //Nested loop to check for all possible pairs
+            for(int j=i+1; j<s.length; j++){            //Nested loop to check for all possible pairs one by one
                 if(s[i]=='a' && s[j]=='g'){             //if a pair is found, increase the count
                     count++;
                 }
@@ -33,7 +33,7 @@ public class CF_GoodPair {
         int count = 0;
         for(int i=0; i<s.length; i++){
             if(s[i]=='a'){
-            for(int j=i+1; j<s.length; j++){            //Nested loop to check for all possible pairs
+            for(int j=i+1; j<s.length; j++){            //Nested loop to check for all possible pairs only when 'a' is found
                 if(s[j]=='g'){             //if a pair is found, increase the count
                     count++;
                 }
