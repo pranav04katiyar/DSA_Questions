@@ -1,6 +1,9 @@
 package IV_Data_Structures.A_Fundamental_DS.i_Arrays_and_Arraylists.a_OneDimensional_Arrays.Questions;
 
 /*
+Problem Title: Good Pair (URL: https://www.interviewbit.com/problems/good-pair/)
+
+Problem Statement:
 Given an array A and an integer B.
 A pair(i, j) in the array is a good pair if i != j and (A[i] + A[j] == B). Check if any good pair exist or not.
 
