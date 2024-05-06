@@ -39,14 +39,16 @@ Traverse the array with 2 loops, nested, one to find the first element and secon
 If yes, then return 1, else return 0.
 Time complexity: O(n^2), Space complexity: O(1)
 
-Optimized:
+Optimized: Two Pointer Approach
+Sort the array.
 Traverse using two pointers, one from start and one from end. Check if the sum is equal to B.
 If yes, return 1. The pair is found.
 If the sum is less than B, then increment the left pointer.
 If the sum is greater than B, then decrement the right pointer.
-Time complexity: O(n), Space complexity: O(1)
+Time complexity: O(nlogn), Space complexity: O(1)
 */
 
+import java.util.Arrays;
 import java.util.Scanner;
 public class EasyLevel_Good_Pair {
     public int solve(int[] A, int B) {
@@ -62,6 +64,7 @@ public class EasyLevel_Good_Pair {
         return 0;                        //return 0, because the pair is not found after all the iterations
   */
         //This is the optimized approach, Time complexity is O(n), Space complexity is O(1)
+        Arrays.sort(A);                         //Sort the array
         int i = 0;                              //This is Left pointer
         int j = A.length-1;                     //This is Right pointer
         while(i<j){
